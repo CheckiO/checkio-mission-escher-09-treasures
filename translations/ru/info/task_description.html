@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}treasures.png" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+Сейф оказался приятно наполнен - причем, в отличии от современных, бумажных денег, раньше знали толк в ценностях и делали их из золота и серебра. Кроме этого там лежали драгоценные камни, украшения и еще много весьма ценных предметов. Вам невероятно хотелось забрать все содержимое сейфа, но, к сожалению, ваша команда погибла, а в одиночку вы могли унести лишь часть сокровищ. Ну что же, тогда пускай это будет наиболее ценная часть!
+</div>
+
+<p>
+На входе вы получите информацию о содержимом сейфа в формате:
+{'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}},
+где price - цена в условных единицах валюты вашей страны, weight - вес в граммах, amount - количество в штуках.<br>
+Кроме этого у вас также будет ограничение в весе (в килограмах), больше которого вы не сможете унести.<br>
+<br>
+Ваша задача - собрать такой набор сокровищ, чтобы их суммарный вес не превышал лимит, а общая стоимость была максимально возможной. Ответ необходимо вернуть как список строк: ['golden coin: 150', 'silver coin: 700', 'ruby: 2']. Во всех тестах будут одни и те же 3 типа сокровищ: golden coin, silver coin and ruby и они должны отображаться в ответе в таком же порядке. Если сокровища определенного типа выходят за лимит веса - не указывайте их в списке.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Словарь с информацией о сокровищах и лимит веса.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Список строк с указанием всех сокровищ, которые вы сможете унести.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Пример:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == ['golden coin: 92', 'ruby: 2']</pre>
+{% else %}
+<pre class="brush: python">
+treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == ['golden coin: 92', 'ruby: 2']
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Для выбора оптимального набора вещей.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Предусловия</strong>:<br>
+    3 типа сокровищ
+</p>

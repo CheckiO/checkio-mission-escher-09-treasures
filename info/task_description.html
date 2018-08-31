@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}treasures.png" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+The vault turned out to have a quite gratifying content, and unlike the current paper currencies, the truly valuable things used to be made of gold and silver. On top of that, there were precious stones, jewelry, and many other valuable items. You wanted so badly to take everything, but, unfortunately, your crew has died, and by yourself you could carry only a part of the treasure. Well, let it be the most valuable part then!
+</div>
+
+<p>
+As input you'll receive the information about the vault contents in the following format:
+{'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000} , 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}},
+where price is measured in the standard units of your country's currency, weight is measured in grams, and amount is measured in pieces.<br>
+In addition, you'll also have a weight limit (in kilograms), over which you won't be able to carry.<br>
+<br>
+Your task is to collect such a set of treasures so that their total weight doesn't exceed the limit, and their total cost was as high as possible. The answer must be returned as the list of strings, for example: ['golden coin: 150', 'silver coin: 700', 'ruby: 2']. There always be 3 types of the treasures (golden coin, silver coin and ruby) and it should be represent in the answer in the same order. If some type of the treasures are out of limit (so you 'can' take it 0) - just don't include it into answer.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Dictionary with information about treasures and weight limit.
+</p>
+
+<p>
+    <strong>Output: </strong> All treasures, which you take (a list of strings).
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == ['golden coin: 92', 'ruby: 2']</pre>
+{% else %}
+<pre class="brush: python">
+treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == ['golden coin: 92', 'ruby: 2']
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For finding the optimal set of the objects.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    3 types of treasures
+</p>

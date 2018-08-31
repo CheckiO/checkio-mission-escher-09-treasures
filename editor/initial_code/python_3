@@ -1,0 +1,12 @@
+def treasures(info, limit):
+    #replace this for solution
+    return 0
+
+if __name__ == '__main__':
+    print("Example:")
+    print(treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5))
+
+    #These "asserts" using only for self-checking and not necessary for auto-testing
+    assert treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == ['golden coin: 92', 'ruby: 2']
+    assert treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 100}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 100}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 1}}, 7.5) == ['golden coin: 100', 'silver coin: 100', 'ruby: 2']
+    print("Coding complete? Click 'Check' to earn cool rewards!")
