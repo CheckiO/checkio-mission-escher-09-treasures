@@ -32,11 +32,22 @@ Your task is to collect such a set of treasures so that their total weight doesn
 </p>
 {% if interpreter.slug == "js-node" %}
 <pre class="brush: javascript">
-treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == ['golden coin: 92', 'ruby: 2']</pre>
+treasures({'golden coin': 
+              {'price': 100, 'weight': 50, 'amount': 200}, 
+           'silver coin': 
+              {'price': 10, 'weight': 20, 'amount': 1000}, 
+           'ruby': 
+              {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == [
+               'golden coin: 92', 'ruby: 2']</pre>
 {% else %}
 <pre class="brush: python">
-treasures({'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == ['golden coin: 92', 'ruby: 2']
-</pre>
+treasures({'golden coin': 
+              {'price': 100, 'weight': 50, 'amount': 200}, 
+           'silver coin': 
+              {'price': 10, 'weight': 20, 'amount': 1000}, 
+           'ruby': 
+              {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == [
+               'golden coin: 92', 'ruby: 2']</pre>
 {% endif %}
 </div>
 
