@@ -34,6 +34,23 @@ TESTS = {
         {
             "input": [{'golden coin': {'price': 100, 'weight': 50, 'amount': 1}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 1}}, 9.95],
             "answer": ['golden coin: 1', 'silver coin: 1', 'ruby: 1']
+        },
+        {
+            "input": [{'golden coin': {'price': 100, 'weight': 10, 'amount': 100}, 'silver coin': {'price': 30, 'weight': 15, 'amount': 500}, 'ruby': {'price': 1000, 'weight': 150, 'amount': 2}}, 9.9],
+            "answer": ['golden coin: 100', 'silver coin: 500', 'ruby: 2']
+        },
+        {
+            "input": [{'golden coin': {'price': 250, 'weight': 10, 'amount': 300}, 'silver coin': {'price': 30, 'weight': 5, 'amount': 500}, 'ruby': {'price': 2000, 'weight': 150, 'amount': 10}}, 3.6],
+            "answer": ['golden coin: 300', 'ruby: 4']
+        },
+        {
+            "input": [{'golden coin': {'price': 250, 'weight': 10, 'amount': 30}, 'silver coin': {'price': 30, 'weight': 5, 'amount': 200}, 'ruby': {'price': 10000, 'weight': 250, 'amount': 7}}, 2.75],
+            "answer": ['golden coin: 30', 'ruby: 7', 'silver coin: 140']
+        },
+        {
+            "input": [{'golden coin': {'price': 125, 'weight': 25, 'amount': 30}, 'silver coin': {'price': 30, 'weight': 5, 'amount': 50}, 'ruby': {'price': 5000, 'weight': 150, 'amount': 7}}, 1.15],
+            "answer": ['golden coin: 4', 'ruby: 7']
         }
+
     ]
 }

@@ -1,0 +1,31 @@
+
+<body data-author="likewind">
+<div class="question-answer">
+    <div class="question">
+        How should I start solving this task?
+    </div>
+    <div class="answer">
+        First of all, you need to calculate the cost of 1 gram of each treasure type: a golden coin, silver coin and ruby. Let’s call this value the unit cost. To calculate it, you need to divide the cost of one item by its weight.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        How will the received values ​​help me?
+    </div>
+    <div class="answer">
+Now you can determine in which order the treasures from the vault should be taken so that their total cost is the maximum. First, you should take the maximum possible number of treasures with the highest unit cost. Then you need to take those with the smaller unit cost in comparison with the first type, but still not minimal. If you still have free space left, and you’ve run out of the first two treasure types, you can proceed to the cheapest items.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        How do I account for the weight of the treasure and the weight limit that I can carry?
+    </div>
+    <div class="answer">
+You can create a separate variable responsible for the total weight of the treasures that you’ve already taken. Every time you take a new coin or ruby ​​- add their weight to this variable. You can take treasures until this number exceeds the limit given in the input data.
+    </div>
+</div>
+
+</body>
+
