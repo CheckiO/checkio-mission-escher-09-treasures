@@ -48,7 +48,7 @@ TESTS = {
             "answer": ['golden coin: 30', 'silver coin: 140', 'ruby: 7']
         },
         {
-            "input": [{'golden coin': {'price': 125, 'weight': 25, 'amount': 30}, 'silver coin': {'price': 30, 'weight': 5, 'amount': 50}, 'ruby': {'price': 5000, 'weight': 150, 'amount': 7}}, 1.15],
+            "input": [{'golden coin': {'price': 125, 'weight': 25, 'amount': 30}, 'silver coin': {'price': 30, 'weight': 10, 'amount': 50}, 'ruby': {'price': 5000, 'weight': 150, 'amount': 7}}, 1.15],
             "answer": ['golden coin: 4', 'ruby: 7']
         }
 
