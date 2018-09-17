@@ -15,7 +15,7 @@ TESTS = {
         },
         {
             "input": [{'golden coin': {'price': 100, 'weight': 50, 'amount': 100}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 100}, 'ruby': {'price': 1000, 'weight': 200, 'amount': 1}}, 7.5],
-            "answer": ['golden coin: 100', 'silver coin: 100', 'ruby: 2']
+            "answer": ['golden coin: 100', 'silver coin: 100', 'ruby: 1']
         }
     ],
     "Extra": [

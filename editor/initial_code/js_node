@@ -29,6 +29,6 @@ if (!global.is_checking) {
                                    {'price': 10, 'weight': 20, 'amount': 100}, 
                                 'ruby': 
                                    {'price': 1000, 'weight': 200, 'amount': 1}}, 7.5),
-                                ['golden coin: 100', 'silver coin: 100', 'ruby: 2'])    
+                                ['golden coin: 100', 'silver coin: 100', 'ruby: 1'])    
 console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
