@@ -1,0 +1,83 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}treasures.jpg" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+金庫は大変満足のいく中身を持っていることが分かりました。
+それは現在の紙幣ではなく製造に金銀を使用された真に価値あるものです。
+それらの上に貴重な宝石や宝飾品などのほか多数の高価な品がありました。
+あなたはそれら全てを持って帰りたいと強く願いましたが、
+残念ながらあなたの雇った船員たちはすでに死んでいます。
+あなた自身で運べるのは宝の一部だけです。
+よろしい、ならばそれらのうち最も価値あるものを持っていきましょう!
+</div>
+
+<p>
+入力として金庫の中身を以下の書式で受け取ります。
+{'golden coin': {'price': 100, 'weight': 50, 'amount': 200}, 'silver coin': {'price': 10, 'weight': 20, 'amount': 1000} , 'ruby': {'price': 1000, 'weight': 200, 'amount': 2}}
+価格 ( price ) はあなたの国での貨幣の標準的な単位で測った値です。
+重量 ( weight )はグラム単位です。量 ( amount ) は数量です。<br>
+加えて重量制限がキログラムで与えられます。
+これを越えると運べません。<br>
+<br>
+あなたの仕事は総重量が重量制限を越えない範囲でこれらの中からできるだけ高い価値の宝物を集めることです。
+答は文字列のリストとして返してください。
+例: ['golden coin: 150', 'silver coin: 700', 'ruby: 2']
+常に 3種の宝物 ( 金貨 ( golden coin ), 銀貨 ( silver coin ), ルビー ( ruby ) ) があります。
+同じ順番で返してください。
+もしある種の宝物が選ばれなかった場合 ( ある宝物を 0個とするのも可能です ) 
+答に含めないでください。
+</p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}taking_treasures.jpg" style="max-height: 550px">
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>入力: </strong> 宝物の情報 ( 価値, 重量, 数 ) の辞書と重量制限
+</p>
+
+<p>
+    <strong>出力: </strong> あなたが持っていく全宝物 ( 文字列のリスト )
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>例:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+treasures({'golden coin': 
+              {'price': 100, 'weight': 50, 'amount': 200}, 
+           'silver coin': 
+              {'price': 10, 'weight': 20, 'amount': 1000}, 
+           'ruby': 
+              {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == [
+               'golden coin: 92', 'ruby: 2']</pre>
+{% else %}
+<pre class="brush: python">
+treasures({'golden coin': 
+              {'price': 100, 'weight': 50, 'amount': 200}, 
+           'silver coin': 
+              {'price': 10, 'weight': 20, 'amount': 1000}, 
+           'ruby': 
+              {'price': 1000, 'weight': 200, 'amount': 2}}, 5) == [
+               'golden coin: 92', 'ruby: 2']</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    最適な集合の調査。
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>事前条件</strong>:<br>
+    3 types of treasures
+</p>
